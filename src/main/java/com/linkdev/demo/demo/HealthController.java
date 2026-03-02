@@ -9,4 +9,8 @@ public class HealthController {
     public String health() {
         return "OK";
     }
+    @GetMapping("/health/new")
+    public String healthNew() {
+        return "OK";
+    }
 }

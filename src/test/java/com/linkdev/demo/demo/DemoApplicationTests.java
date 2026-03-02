@@ -7,9 +7,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 class DemoApplicationTests {
 
     @Test
-    void contextLoads() {
-    }
-    @Test
     void healthReturnsOk() {
         HealthController c = new HealthController();
         assertThat(c.health()).isEqualTo("OK");
